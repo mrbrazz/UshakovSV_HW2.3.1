@@ -9,20 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    // MARK: - IB Outlet
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var remindNameButton: UIButton!
     @IBOutlet weak var remindPasswordButton: UIButton!
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.login = userNameTF.text
+    }
+    
+    // MARK: - IB Action
     @IBAction func remindPasswordAction() {
         showAlert(title: "Your Password", message: "\(password)")
     }
@@ -33,18 +37,20 @@ class ViewController: UIViewController {
         if userNameTF.text != name || passwordTF.text != password {
            showAlert(title: "Invalid user name or password", message: "Please, enter correct user name and password")
         }
-        
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.login = userNameTF.text
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let welcomeVC = segue.source as? WelcomeViewController else { return }
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
+    
+    
 }
 
 // MARK: - Private Method
-let name = "Brazz"
-let password = "123"
+private let name = "brazz"
+private let password = "123"
 
 private extension ViewController {
     func showAlert(title: String, message: String) {
