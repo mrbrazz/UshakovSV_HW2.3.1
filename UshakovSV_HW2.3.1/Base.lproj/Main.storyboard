@@ -89,7 +89,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="lT3-aI-0lY">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uNd-xN-pXC" customClass="WelcomeViewController" customModule="UshakovSV_HW2_3_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uNd-xN-pXC" customClass="WelcomeViewController" customModule="UshakovSV_HW2_3_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sD-Yx-aEg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
