@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         showAlert(title: "Your name", message: "\(name)")
     }
     @IBAction func loginButtonAction() {
-        if userNameTF.text != name && passwordTF.text != password {
-           showAlert(title: "Bad Password or Name", message: "buu")
+        if userNameTF.text != name || passwordTF.text != password {
+           showAlert(title: "Invalid user name or password", message: "Please, enter correct user name and password")
         }
         
     }

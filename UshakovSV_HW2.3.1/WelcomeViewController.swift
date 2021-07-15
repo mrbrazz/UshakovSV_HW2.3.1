@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         guard let login = self.login else {
             return
         }
-        welcomeLable.text = "Welcome \(login) "
+        welcomeLable.text = "Welcome, \(login)! "
     }
     
 }
