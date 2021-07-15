@@ -17,10 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var remindNameButton: UIButton!
     @IBOutlet weak var remindPasswordButton: UIButton!
     
+    // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.login = userNameTF.text
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     }
     @IBAction func loginButtonAction() {
         if userNameTF.text != name || passwordTF.text != password {
-           showAlert(title: "Invalid user name or password", message: "Please, enter correct user name and password")
+            showAlert(title: "Invalid user name or password", message: "Please, enter correct user name and password")
         }
     }
     
@@ -44,8 +46,6 @@ class ViewController: UIViewController {
         userNameTF.text = ""
         passwordTF.text = ""
     }
-    
-    
 }
 
 // MARK: - Private Method

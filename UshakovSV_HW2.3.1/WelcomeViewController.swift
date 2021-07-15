@@ -8,7 +8,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     var login: String?
     
     @IBOutlet weak var welcomeLable: UILabel!
