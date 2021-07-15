@@ -135,7 +135,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zK4-X8-iis">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ctu-pW-LQp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="ctu-pW-LQp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cle-my-1fR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
