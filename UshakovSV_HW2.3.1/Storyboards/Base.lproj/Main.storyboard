@@ -240,7 +240,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="islands-300" translatesAutoresizingMaskIntoConstraints="NO" id="Dns-qt-U3M">
-                                <rect key="frame" x="16" y="0.0" width="288" height="150"/>
+                                <rect key="frame" x="16" y="0.0" width="288" height="169.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UB6-Vf-Wwt"/>
@@ -252,7 +252,7 @@
                             <constraint firstItem="Dns-qt-U3M" firstAttribute="leading" secondItem="UB6-Vf-Wwt" secondAttribute="leading" constant="16" id="ba9-TX-faC"/>
                             <constraint firstItem="zd6-Mg-nCJ" firstAttribute="centerY" secondItem="g2a-wy-ntI" secondAttribute="centerY" id="jTH-xW-cz1"/>
                             <constraint firstItem="UB6-Vf-Wwt" firstAttribute="trailing" secondItem="Dns-qt-U3M" secondAttribute="trailing" constant="16" id="vm5-fC-8tk"/>
-                            <constraint firstItem="zd6-Mg-nCJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dns-qt-U3M" secondAttribute="bottom" constant="32" id="xbz-Sg-yLA"/>
+                            <constraint firstItem="zd6-Mg-nCJ" firstAttribute="top" relation="lessThanOrEqual" secondItem="Dns-qt-U3M" secondAttribute="bottom" constant="32" id="xbz-Sg-yLA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="book" catalog="system" id="we4-Br-s1s"/>
