@@ -14,6 +14,10 @@
 		D6735E35269EAD9E00206D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6735E34269EAD9E00206D8D /* Assets.xcassets */; };
 		D6735E38269EAD9E00206D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6735E36269EAD9E00206D8D /* LaunchScreen.storyboard */; };
 		D6735E42269EB93400206D8D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6735E41269EB93400206D8D /* WelcomeViewController.swift */; };
+		D6735E6B26A4784300206D8D /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6735E6A26A4784300206D8D /* UserProfile.swift */; };
+		D6735E6D26A482B600206D8D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6735E6C26A482B600206D8D /* UserInfo.swift */; };
+		D6735E6F26A482EC00206D8D /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6735E6E26A482EC00206D8D /* PersonalInfo.swift */; };
+		D6735E7126A5571900206D8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6735E7026A5571900206D8D /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D6735E37269EAD9E00206D8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6735E39269EAD9E00206D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6735E41269EB93400206D8D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D6735E6A26A4784300206D8D /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		D6735E6C26A482B600206D8D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		D6735E6E26A482EC00206D8D /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
+		D6735E7026A5571900206D8D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,60 @@
 		D6735E2A269EAD9B00206D8D /* UshakovSV_HW2.3.1 */ = {
 			isa = PBXGroup;
 			children = (
-				D6735E2B269EAD9B00206D8D /* AppDelegate.swift */,
-				D6735E2D269EAD9B00206D8D /* SceneDelegate.swift */,
-				D6735E2F269EAD9B00206D8D /* ViewController.swift */,
-				D6735E31269EAD9B00206D8D /* Main.storyboard */,
-				D6735E41269EB93400206D8D /* WelcomeViewController.swift */,
-				D6735E34269EAD9E00206D8D /* Assets.xcassets */,
-				D6735E36269EAD9E00206D8D /* LaunchScreen.storyboard */,
-				D6735E39269EAD9E00206D8D /* Info.plist */,
+				D6735E6426A4719400206D8D /* ViewControllers */,
+				D6735E6726A4731000206D8D /* Storyboards */,
+				D6735E6526A4726B00206D8D /* Models */,
+				D6735E6926A4737700206D8D /* Resources */,
+				D6735E6826A4734800206D8D /* SupportingFiles */,
 			);
 			path = UshakovSV_HW2.3.1;
+			sourceTree = "<group>";
+		};
+		D6735E6426A4719400206D8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6735E2F269EAD9B00206D8D /* ViewController.swift */,
+				D6735E41269EB93400206D8D /* WelcomeViewController.swift */,
+				D6735E7026A5571900206D8D /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D6735E6526A4726B00206D8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6735E6A26A4784300206D8D /* UserProfile.swift */,
+				D6735E6C26A482B600206D8D /* UserInfo.swift */,
+				D6735E6E26A482EC00206D8D /* PersonalInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6735E6726A4731000206D8D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D6735E36269EAD9E00206D8D /* LaunchScreen.storyboard */,
+				D6735E31269EAD9B00206D8D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D6735E6826A4734800206D8D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D6735E2B269EAD9B00206D8D /* AppDelegate.swift */,
+				D6735E2D269EAD9B00206D8D /* SceneDelegate.swift */,
+				D6735E39269EAD9E00206D8D /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D6735E6926A4737700206D8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6735E34269EAD9E00206D8D /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6735E6B26A4784300206D8D /* UserProfile.swift in Sources */,
+				D6735E6D26A482B600206D8D /* UserInfo.swift in Sources */,
+				D6735E6F26A482EC00206D8D /* PersonalInfo.swift in Sources */,
 				D6735E30269EAD9B00206D8D /* ViewController.swift in Sources */,
 				D6735E42269EB93400206D8D /* WelcomeViewController.swift in Sources */,
 				D6735E2C269EAD9B00206D8D /* AppDelegate.swift in Sources */,
+				D6735E7126A5571900206D8D /* ProfileViewController.swift in Sources */,
 				D6735E2E269EAD9B00206D8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UshakovSV_HW2.3.1/Info.plist;
+				INFOPLIST_FILE = UshakovSV_HW2.3.1/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UshakovSV_HW2.3.1/Info.plist;
+				INFOPLIST_FILE = UshakovSV_HW2.3.1/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

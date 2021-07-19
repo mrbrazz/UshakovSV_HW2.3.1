@@ -9,19 +9,19 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    var login: String?
-    
+    // MARK: - IB Outlet
     @IBOutlet weak var welcomeLable: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
     
+    // MARK: - Private Properties
+    private var login = ""
+    private let userInfo = UserProfile.getUserProfile()
     
+    // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      guard let login = self.login else {
-            return
-        }
+        welcomeLable.text = self.login
+        //      guard let login = self.login else {return}
         welcomeLable.text = "Welcome, \(login)! "
     }
-    
 }
