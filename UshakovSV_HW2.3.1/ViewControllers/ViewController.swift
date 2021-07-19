@@ -24,10 +24,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         
-        for _ in tabBarVC.viewControllers! {
-            if let welcomeVC = segue.destination as? WelcomeViewController {
+        for viewController in tabBarVC.viewControllers! {
+            if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.login = userInfo.userInfo.username
-                print(welcomeVC.login)
             }
         }
     }
