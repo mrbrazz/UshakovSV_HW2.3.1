@@ -9,12 +9,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    var login = ""
+    
     // MARK: - IB Outlet
     @IBOutlet weak var welcomeLable: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
     
     // MARK: - Private Properties
-    private var login = ""
     private let userInfo = UserProfile.getUserProfile()
     
     // MARK: - Life Cycles Methods
