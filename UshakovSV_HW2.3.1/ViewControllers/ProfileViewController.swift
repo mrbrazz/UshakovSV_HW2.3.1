@@ -9,11 +9,10 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var placeOfResidence: UILabel!    
-    @IBOutlet weak var birthDay: UILabel!
-    @IBOutlet weak var gender: UILabel!
-    @IBOutlet weak var familyStatus: UILabel!
-    
+    @IBOutlet weak var placeOfResidenceLable: UILabel!
+    @IBOutlet weak var birthDayLable: UILabel!
+    @IBOutlet weak var genderLable: UILabel!
+    @IBOutlet weak var familyStatusLable: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

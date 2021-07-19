@@ -228,10 +228,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="book" catalog="system" id="we4-Br-s1s"/>
                     <connections>
-                        <outlet property="birthDay" destination="Ggm-KA-biN" id="kzx-JT-KFa"/>
-                        <outlet property="familyStatus" destination="CmK-h5-guG" id="t8V-cG-TA5"/>
-                        <outlet property="gender" destination="lx5-EN-1Te" id="zuX-Ju-CAl"/>
-                        <outlet property="placeOfResidence" destination="QOw-yq-9X1" id="sdf-EV-Z8s"/>
+                        <outlet property="birthDayLable" destination="1Et-zD-M9x" id="uw7-Gy-CHY"/>
+                        <outlet property="familyStatusLable" destination="zCc-UU-kQX" id="UUD-HL-pkT"/>
+                        <outlet property="genderLable" destination="OLV-pM-fft" id="Enx-aF-kQi"/>
+                        <outlet property="placeOfResidenceLable" destination="hqf-Oi-U0L" id="oJm-Tx-LeD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URP-TB-olo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
