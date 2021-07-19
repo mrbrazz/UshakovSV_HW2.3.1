@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         for viewController in tabBarVC.viewControllers! {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.login = "\(userInfo.personalInfo.name) \(userInfo.personalInfo.lastname)"
+            } else if let profileVC = viewController as? ProfileViewController {
+                profileVC.birthDay = userInfo.personalInfo.birthDay
+                profileVC.familyStatus = userInfo.personalInfo.familyStatus
+                profileVC.gender = userInfo.personalInfo.gender
+                profileVC.placeOfResidence = userInfo.personalInfo.placeOfResidence
             }
         }
     }
