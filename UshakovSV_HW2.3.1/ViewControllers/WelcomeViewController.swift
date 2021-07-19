@@ -22,7 +22,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLable.text = self.login
-        //      guard let login = self.login else {return}
-        welcomeLable.text = "Welcome, \(login)! "
+        welcomeLable.text = "Привет, \(login)! "
     }
 }
